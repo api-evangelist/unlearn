@@ -1,7 +1,13 @@
 aid: unlearn
 name: Unlearn
-description: 'Unlearn is a company surfaced as a portfolio company of 8vc, dcvc and added to the API Evangelist
-  network as a stub for enrichment. Sector: biotech. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Unlearn is a San Francisco AI company that builds digital twin generators for
+  clinical trials — machine learning models trained on patient-level historical
+  data that forecast an individual participant's clinical outcomes under control
+  or standard of care. Sponsors use these AI-generated digital twins to plan
+  trials, monitor clinical data, and run smaller, more powerful studies; the
+  approach is qualified by the EMA and aligned with current FDA guidance.
+  Unlearn is backed by 8VC and DCVC and publishes no public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/unlearn/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,29 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://avatars.githubusercontent.com/u/27824185?v=4
 tags:
 - Company
 - Biotech
+- Artificial Intelligence
+- Clinical Trials
+- Digital Twins
+- Machine Learning
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +48,22 @@ maintainers:
 common:
 - type: Website
   url: https://unlearn.ai
+- type: Blog
+  url: https://www.unlearn.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/unlearnai
+- type: Support
+  url: https://www.unlearn.ai/forms/contact-us
+- type: TermsOfService
+  url: https://www.unlearn.ai/terms
+- type: PrivacyPolicy
+  url: https://www.unlearn.ai/privacy
+- type: LLMsTxt
+  url: llms/unlearn-llms.txt
+- type: DomainSecurity
+  url: security/unlearn-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

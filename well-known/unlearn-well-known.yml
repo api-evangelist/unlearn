@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of unlearn.ai hosts
+note: >-
+  Probed the standard /.well-known/ discovery surface (and /llms.txt) across the
+  primary Unlearn hosts. None returned 200; recorded here as honest negative
+  results. No WellKnown or SecurityTxt pointer is emitted because nothing was
+  found.
+hosts:
+- host: https://unlearn.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /llms.txt, status: 404}
+- host: https://www.unlearn.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /llms.txt, status: 404}
+subdomains_probed:
+- {host: api.unlearn.ai, status: unresolvable}
+- {host: docs.unlearn.ai, status: unresolvable}
+- {host: app.unlearn.ai, status: unresolvable}
+- {host: status.unlearn.ai, status: unresolvable}
+- {host: trust.unlearn.ai, status: unresolvable}
